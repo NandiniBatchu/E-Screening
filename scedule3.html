@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+body{
+background-image:url('scheduleimage.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+}
+</style>
+<center>
+<form action="instructions.html" method="get" onsubmit="return validateForm()">
+  <label for="option1">select a Domain</label>
+  <select id="option1" name="please select a Domain">
+    <option value=""></option>
+    <option value="option1_value1">AI_ML</option>
+    <option value="option1_value2">CyberSecurity</option>
+    <option value="option1_value3">Big Data</option>
+<option value="option1_value1">Cloud Compuing</option>
+    <option value="option1_value2">Operating System</option>
+    <option value="option1_value3">Deep Learning</option>
+  </select>
+  <br><br>
+  <label for="option2">Select a Exam Mode</label>
+  <select id="option2" name="Please select a exam Mode">
+    <option value=""></option>
+    <option value="option2_value1">MCQ</option>
+    <option value="option2_value2">Descriptive Questions</option>
+   
+  </select>
+  <br><br>
+  <label for="option3">Select a Department</label>
+  <select id="option3" name="please select a Department">
+    <option value=""></option>
+    <option value="option3_value1">CSE</option>
+    <option value="option3_value2">ECE</option>
+    <option value="option3_value3">EEE</option>
+<option value="option3_value1">CIVIL</option>
+    <option value="option3_value2">MECH</option>
+    <option value="option3_value3">CS-DS</option>
+<option value="option3_value1">CS-BS</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</center>
+<script>
+function validateForm() {
+  var option1 = document.getElementById("option1").value;
+  var option2 = document.getElementById("option2").value;
+  var option3 = document.getElementById("option3").value;
+  if (option1 == "" || option2 == "" || option3 == "") {
+    alert("Please select all options");
+    return false;
+  }
+}
+</script>

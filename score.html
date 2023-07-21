@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Score and Appreciation Message Example</title>
+  </head>
+
+  <body bgcolor="pink">
+    <h1><center>Results</center></h1>
+    <p><b>Your score is: <span id="score">60</span></b></p>
+    <p id="appreciation-message"></p>
+    
+    
+
+<script>
+      // Get the score element and convert its value to a number
+      const scoreEl = document.getElementById("score");
+      const score = Number(scoreEl.textContent);
+      
+      // Display an appreciation message based on the score
+      let appreciationMessage = "";
+      if (score >= 90) {
+        appreciationMessage = "Excellent job!";
+      } else if (score >= 80) {
+        appreciationMessage = "Great work!";
+      } else if (score >= 70) {
+        appreciationMessage = "Good job!";
+      } else {
+        appreciationMessage = "Keep working hard!";
+      }
+      
+      // Set the appreciation message element's text content
+      const appreciationMessageEl = document.getElementById("appreciation-message");
+      appreciationMessageEl.textContent = appreciationMessage;
+	
+    </script>
+  </body>
+</html>

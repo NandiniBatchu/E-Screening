@@ -1,0 +1,49 @@
+<html ng-app>
+<head>
+<title>Instructions List</title>
+<style type="text/css">
+ol{
+   list-style-type: number;
+   color: black;
+   font-size:25px;
+}
+body{
+background-image:url('instructionsimage.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+
+</style>
+<body>
+<center><h2>INSTRUCTIONS</h2></center>
+<ol>
+<li>No cell phones or other secondary devices in the room or test area.</li>
+<li>Your desk/table must be clear or any materials except your test-taking device.</li>
+<li>No one else can be in the room with you.</li>
+<li>No talking.</li>
+<li>No dual screens/monitors.</li>
+<li>No dual screens/monitors.</li>
+<li>Each question carries 20 Marks.</li>
+<li>No negative marking for wrong answers</li>
+<li>The test will be end after 30 minutes automatically</li>
+</ol>
+<form action="timer.html" method="get" onsubmit="return validateForm()">
+  
+  <input type="checkbox" id="checkbox" name="checkbox">
+<label for="checkbox">I agree to the above<b>TERMS & CONDITIONS.</b></label>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateForm() {
+  var checkbox = document.getElementById("checkbox");
+  if (!checkbox.checked) {
+    alert("Please agree to the terms and conditions");
+    return false;
+  }
+}
+</script>
+
+</html>
+

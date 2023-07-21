@@ -1,0 +1,63 @@
+```<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+.tab1{
+   tab-size:8;
+}
+body{
+background-image:url('timerimage.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+}
+</style>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 3, 2023 11:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "within  15 mins exam will start";
+  }
+}, 1000);
+</script>
+<h2><a href="TB_DL_des.html" target="_self">DEEP LEARNING</a><br><br></h2>
+<h2><a href="tb_cc_des.html" target="_self">CLOUD COMPUTING</a><br><br></h2>
+<h2><a href="os_des.html" target="_self">OPERATING SYSTEM</a><br><br></h2>
+<h2><a href="BDA.html" target="_self">BIG DATA</a><br><br></h2>
+<h2><a href="AI.html" target="_self">AI-ML</a><br><br></h2>
+<h2><a href="cyber.html" target="_self">CYBER SECURITY</a><br><br></h2>
+</body>
+</html>
