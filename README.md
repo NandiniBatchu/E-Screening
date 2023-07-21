@@ -1,4 +1,4 @@
-TITLE : -Screening
+TITLE :E-Screening
 
 INTRODUCTION:
 In the modern era of technology,online education has become a significant aspect of learning.It also revolutionized the way students learn and instuctor asses student's progress.One such innovtion is student online test websites.This aims to create a platform where students can take online tests, while the administrators can create and manage tests afforlessly.In our website we have admin login, student login and score board.
